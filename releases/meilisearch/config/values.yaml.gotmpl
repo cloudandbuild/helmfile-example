@@ -1,0 +1,3 @@
+environment:
+  MEILI_ENV: {{ .Values.env | quote }}
+  MEILI_MASTER_KEY: {{ .Values.secret.masterKey | quote }}

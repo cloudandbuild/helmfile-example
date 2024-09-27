@@ -1,0 +1,11 @@
+---
+creation_rules:
+  - path_regex: .*/config/default-secrets\.yaml
+    age: 'your public key here'
+  # - path_regex: .*/config/prod-secrets\.yaml
+  #   age: 'your public key here'
+# Encrypt with AWS KMS
+# - kms: 'arn:aws:kms:us-east-1:222222222222:key/111b1c11-1c11-1fd1-aa11-a1c1a1sa1dsl1+arn:aws:iam::222222222222:role/helm_secrets'
+
+# Encrypt using Google Cloud KMS
+# - gcp_kms: projects/mygcproject/locations/global/keyRings/mykeyring/cryptoKeys/thekey
