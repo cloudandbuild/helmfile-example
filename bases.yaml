@@ -1,0 +1,3 @@
+bases:
+  - ../../environments.yaml
+  - ../../templates.yaml

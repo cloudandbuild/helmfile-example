@@ -1,0 +1,12 @@
+{{ readFile "../../bases.yaml" }}
+---
+repositories:
+  - name: meilisearch
+    url: https://meilisearch.github.io/meilisearch-kubernetes
+releases:
+  - name: meilisearch
+    chart: meilisearch/meilisearch
+    namespace: database
+    version: 0.9.1
+    inherit:
+      - template: default
