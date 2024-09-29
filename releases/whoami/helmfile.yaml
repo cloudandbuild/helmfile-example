@@ -1,0 +1,13 @@
+{{ readFile "../../bases.yaml" }}
+---
+repositories:
+  - name: whoami
+    url: https://cowboysysop.github.io/charts/
+
+releases:
+  - name: whoami
+    chart: cowboysysop/whoami
+    namespace: default
+    version: 5.1.2
+    inherit:
+      - template: default
