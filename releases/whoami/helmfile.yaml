@@ -1,7 +1,7 @@
 {{ readFile "../../bases.yaml" }}
 ---
 repositories:
-  - name: whoami
+  - name: cowboysysop
     url: https://cowboysysop.github.io/charts/
 
 releases:
