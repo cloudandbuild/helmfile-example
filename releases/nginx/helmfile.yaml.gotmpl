@@ -1,0 +1,9 @@
+{{ readFile "../../bases.yaml" }}
+---
+releases:
+  - name: nginx
+    chart: ../../charts/nginx
+    namespace: default
+    version: 0.1.0
+    inherit:
+      - template: default

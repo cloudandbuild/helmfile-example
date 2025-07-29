@@ -3,4 +3,4 @@ bases:
   - ./templates.yaml
 ---
 helmfiles:
-  - ./releases/*/helmfile.yaml.gotmpl
+  - ./releases/_/helmfile.yaml.gotmpl
