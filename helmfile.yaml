@@ -1,6 +1,6 @@
 bases:
-  - ./environments.yaml
+  - ./environments.yaml.gotmpl
   - ./templates.yaml
 ---
 helmfiles:
-  - ./releases/*/helmfile.yaml
+  - ./releases/*/helmfile.yaml.gotmpl
