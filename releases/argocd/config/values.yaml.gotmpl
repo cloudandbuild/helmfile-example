@@ -6,11 +6,6 @@ controller:
 
 server:
   replicas: 1
-  ingress:
-    enabled: true
-    hostname: argocd.private.local
-    annotations:
-      nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 
 repoServer:
   replicas: 1
@@ -40,8 +35,8 @@ configs:
               else
                 helmfile template -l name="$PARAM_NAME" template --include-crds -q
               fi
-  params:
-    server.insecure: true
+  #params:
+  #  server.insecure: true
   repositories:
     helmfile-example:
       url: https://github.com/cloudandbuild/helmfile-example
